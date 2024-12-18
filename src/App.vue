@@ -3,12 +3,25 @@
     <nav>
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
+      <p>{{ $t("example1") }}</p>
+      <p>{{ $t("example2") }}</p>
     </nav>
-    <router-view/>
+    <button @click="throwError">Throw error</button>
+    <router-view />
   </div>
 </template>
 
-<style>
+<script>
+export default {
+  methods: {
+    throwError() {
+      throw new Error('Sentry Error')
+    }
+  }
+}
+</script>
+
+<style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
