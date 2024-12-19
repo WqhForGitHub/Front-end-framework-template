@@ -33,3 +33,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 * EventBus
 * Vuex 持久化
 * 集成 sentry 错误跟踪
+* webpack 默认配置的更改
