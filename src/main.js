@@ -22,6 +22,19 @@ Sentry.init({
 })
 
 
+// // 用 subscribe 方法监听 mutation 的变化
+// store.subscribe((mutation, state) => {
+//   console.log('mutation.type:', mutation.type);
+//   console.log('mutation.payload', mutation.payload);
+// })
+
+// // 用 subscribeAction 方法监听 action 的触发
+// store.subscribeAction((action, state) => {
+//   console.log('action.type:', action.type);
+//   console.log('action.payload:', action.payload);
+// });
+
+
 new Vue({
   router,
   store,
